@@ -2,3 +2,20 @@
 {"message":"Note with id 13 deleted.","level":"info"}
 {"message":"Note with id 7 deleted.","level":"info"}
 {"message":"Note with id 15 deleted.","level":"info"}
+{"message":"Name is required","level":"error"}
+{"message":"Name is required","level":"error"}
+{"message":"Name is required","level":"error"}
+{"message":"Name is required","level":"error"}
+{"message":"Name is required","level":"error"}
+{"message":"Name is required","level":"error"}
+{"message":"Name is required","level":"error"}
+{"message":"folder with id 8 created.","level":"info"}
+{"message":"folder with id 9 created.","level":"info"}
+{"message":"folder with id 10 created.","level":"info"}
+{"message":"folder with id 11 created.","level":"info"}
+{"message":"folder with id 12 created.","level":"info"}
+{"message":"folder with id 13 created.","level":"info"}
+{"message":"folder with id 14 created.","level":"info"}
+{"message":"folder with id 15 created.","level":"info"}
+{"message":"folder with id 16 created.","level":"info"}
+{"message":"folder with id 17 created.","level":"info"}

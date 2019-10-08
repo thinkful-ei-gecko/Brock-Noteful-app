@@ -4,6 +4,7 @@ const FoldersService = {
   },
 
   insertFolder(knex, newFolder) {
+    console.log(newFolder);
     return knex 
       .insert(newFolder)
       .into('folders')
