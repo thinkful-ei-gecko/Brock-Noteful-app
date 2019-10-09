@@ -11,8 +11,8 @@ const serializeNote = note => ({
   id: note.id,
   name: xss(note.name),
   content: note.content,
-  dateModified: note.dateModified,
-  folderId: note.folderId
+  datemodified: note.datemodified,
+  folderid: note.folderid
 });
 
 notesRouter
@@ -25,7 +25,7 @@ notesRouter
       .catch(next);
   })
   .post(jsonParser, (req, res, next) => {
-    const { name, content, dateModified, folderId } = req.body;
+    const { name, content, datemodified, folderid } = req.body;
 
     if (!name) {
       logger.error('Name is required');
@@ -34,7 +34,7 @@ notesRouter
         .send('Invalid data');
     }
 
-    const newNote = { name, content, dateModified, folderId  };
+    const newNote = { name, content, datemodified, folderid  };
 
     NotesService.insertNote(
       req.app.get('db'),
@@ -84,14 +84,14 @@ notesRouter
       .catch(next);
   })
   .patch(jsonParser, (req, res, next) => {
-    const { name, content, dateModified, folderId  } = req.body;
-    const noteToUpdate = { name, content, dateModified, folderId  };
+    const { name, content, datemodified, folderid  } = req.body;
+    const noteToUpdate = { name, content, datemodified, folderid  };
 
     const numOfValues = Object.values(noteToUpdate).filter(Boolean).length;
     if (numOfValues === 0) {
       return res.status(400).json({
         error: {
-          message: 'Request body must contain either \'name\', \'content\',\'dateModified\',\'folderId\''
+          message: 'Request body must contain either \'name\', \'content\',\'datemodified\',\'folderid\''
         }
       });
     }

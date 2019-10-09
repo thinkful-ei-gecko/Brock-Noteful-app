@@ -19,3 +19,13 @@
 {"message":"folder with id 15 created.","level":"info"}
 {"message":"folder with id 16 created.","level":"info"}
 {"message":"folder with id 17 created.","level":"info"}
+{"message":"Name is required","level":"error"}
+{"message":"note with id 18 created.","level":"info"}
+{"message":"note with id 19 created.","level":"info"}
+{"message":"note with id 20 created.","level":"info"}
+{"message":"note with id 21 created.","level":"info"}
+{"message":"Note with id 18 deleted.","level":"info"}
+{"message":"Note with id 19 deleted.","level":"info"}
+{"message":"Note with id 20 deleted.","level":"info"}
+{"message":"Note with id 21 deleted.","level":"info"}
+{"message":"note with id 22 created.","level":"info"}
